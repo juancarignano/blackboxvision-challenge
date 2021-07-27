@@ -1,0 +1,38 @@
+.container {
+    display: flex; //necesario para usar flex-direction
+    flex-direction: column; //para que quede uno abajo del otro
+    
+    header {
+        display: block; //esto se define para poder darle bien los margenes que quiero
+        margin: 0 auto -12px auto;
+        z-index: 1; //para que quede detrás de la tarjeta
+        padding: 6px 12px;
+        width: fit-content;
+        background-color: white;
+        border-radius: 4px;
+        color: var(--primary);
+        font-size: 18px;
+    }
+
+    section {
+        background-color: #FFE286;
+        color: rgba(0,0,0,0.5);
+        padding: 128px 32px;
+        font-size: 20px;
+        border-radius: 4px;
+        box-shadow: 0 3px 3px rgba(255,220,250,0.25);
+        font-weight: 500;
+    }
+
+    footer {
+        display: block; //esto se define para poder darle bien los margenes que quiero
+        margin: -12px auto 0 auto;
+        z-index: 1; //para que quede detrás de la tarjeta
+        padding: 6px 12px;
+        width: fit-content;
+        background-color: white;
+        border-radius: 4px;
+        color: var(--primary);
+        font-size: 18px;
+    }
+}

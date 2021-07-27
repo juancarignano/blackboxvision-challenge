@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: 480px;
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+  border-radius: 4px;
+
+  .answers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+
+    button:not(:first-of-type) {
+      margin-top: 12px;
+    }
+  }
+}

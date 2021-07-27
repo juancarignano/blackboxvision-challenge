@@ -1,0 +1,18 @@
+.container {
+    padding: 12px 36px;
+    width: 100%; //para que ocupe todo el ancho del padre
+    background-color: transparent; //le saca el color al boton por defecto
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px; //redondeado bordes
+    cursor: pointer; //se lo saca cuando reestilo un button
+    transition: all 0.2s linear;
+
+
+&:hover, &:focus {
+    background-color: var(--primary);
+    color: white;
+    }   
+}
