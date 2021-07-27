@@ -61,7 +61,7 @@ const App: React.FC = () => {
   return (
     <main className={styles.container}>
       <QuestionCard
-        footer={`${question.category} - ${question.difficulty}`}
+        footer={` ${question.difficulty} | ${question.category}`}
         header={`${currentQuestion + 1}/ ${questions.length}`}
       >
         {unescape(question.question)}

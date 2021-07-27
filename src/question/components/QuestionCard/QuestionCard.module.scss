@@ -15,7 +15,7 @@
     }
 
     section {
-        background-color: #FFE286;
+        background-color: #86ddff;
         color: rgba(0,0,0,0.5);
         padding: 128px 32px;
         font-size: 20px;
@@ -34,5 +34,7 @@
         border-radius: 4px;
         color: var(--primary);
         font-size: 18px;
+        border: 2px solid var(--primary);
+        font-weight: 500;
     }
 }
