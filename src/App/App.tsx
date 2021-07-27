@@ -24,6 +24,8 @@ const App: React.FC = () => {
           setPoints((points) => points + 10);
           break;
       }
+    } else {
+      alert("Respuesta seleccionada incorrecta");
     }
 
     if (currentQuestion + 1 == questions.length) {
@@ -45,7 +47,15 @@ const App: React.FC = () => {
   }
 
   if (status == "finished") {
-    return <span>You earned {points} points</span>;
+    return (
+      <div>
+        <span className="earnedPoints">You earned {points} points</span>
+        <br />
+        <button className="reloadButton" onClick={() => location.reload()}>
+          Play again!
+        </button>
+      </div>
+    );
   }
 
   return (
